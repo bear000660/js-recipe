@@ -12,6 +12,17 @@ const hikakin = {
   },
 }
 
+const Shunichi = {
+  name: "村中竣一",
+  age: 19,
+  favoriteGirlsGroup: "NiziU",
+  belongTo: "広島大学",
+  address: {
+    country: "日本",
+    prefecture: "広島",
+  },
+}
+
 // 練習問題
 // hikakin オブジェクトに入っている sayHello メソッドを実行してください。
 
