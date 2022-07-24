@@ -53,6 +53,17 @@ addButton.onclick = function () {
   inputElement.value = ""
 }
 
+// 入力欄でEnterを押したときの処理を登録
+inputElement.onkeydown = function (e) {
+  if (e.key === "Enter") {
+    // カードを作成する
+    const card = createCard(inputElement.value)
+    container.append(card)
+
+    // 入力欄を空にする
+    inputElement.value = ""
+  }
+}
 // 共通の処理：テキストからカードを作成する
 const createCard = function (text) {
   // カードの枠を作る
