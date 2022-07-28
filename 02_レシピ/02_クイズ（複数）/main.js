@@ -98,10 +98,10 @@ const choice1 = document.getElementById("choice-1")
 const choice2 = document.getElementById("choice-2")
 const choice3 = document.getElementById("choice-3")
 const feedback = document.getElementById("feedback")
-const next = document.getElementById("quiz-next")
+const next = document.getElementById("next-quiz")
 
 // 何問目のクイズか数える変数。
-let i
+let i = 0
 
 // クイズの内容
 const quiz = [
@@ -141,6 +141,28 @@ const quiz = [
       {
         text: "3",
         feedback: "残念！ひとつおおいよ。",
+      },
+    ],
+  },
+  // クイズ３の内容
+  {
+    text: "この城の名前は？",
+    image: "Maruoka.png",
+    choices: [
+      {
+        text: "丸岡城",
+        isCorrect: true,
+        feedback: "正解！どこからどうみても丸岡城だね。",
+      },
+      {
+        text: "丸亀城",
+        isCorrect: true,
+        feedback: "残念！どこからどうみても丸亀城ではないよ。",
+      },
+      {
+        text: "丸子城",
+        isCorrect: false,
+        feedback: "残念！どこからどうみても丸子城ではないよ。",
       },
     ],
   },
